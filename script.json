@@ -1,0 +1,28 @@
+{
+  "id": "cidaren",
+  "name": "词达人",
+  "version": "0.1.0",
+  "author": "CometNetworkStudio",
+  "runtime": "python3",
+  "entry": "main.py",
+  "args": [],
+  "requires": ["requests"],
+  "actions": [
+    { "id": "study", "name": "班级学习任务" },
+    { "id": "class", "name": "班级任务" }
+  ],
+  "credentials": [
+    { "key": "token", "label": "Token", "type": "password" }
+  ],
+  "params": [
+    { "key": "task_name", "label": "任务名称(子串，可空)", "type": "text", "default": "" },
+    { "key": "task_type", "label": "任务类型(1 学习 / 2 测试)", "type": "number", "default": 1 },
+    { "key": "progress_lt", "label": "仅处理进度低于", "type": "number", "default": 100 },
+    { "key": "limit", "label": "最多任务数(0=不限)", "type": "number", "default": 0 },
+    { "key": "max_steps", "label": "单任务最多题数", "type": "number", "default": 1000 },
+    { "key": "think_min", "label": "思考最短(秒)", "type": "number", "default": 2 },
+    { "key": "think_max", "label": "思考最长(秒)", "type": "number", "default": 4 },
+    { "key": "spend_min", "label": "time_spent 最短(秒)", "type": "number", "default": 5 },
+    { "key": "spend_max", "label": "time_spent 最长(秒)", "type": "number", "default": 15 }
+  ]
+}
