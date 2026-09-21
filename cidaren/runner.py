@@ -11,12 +11,12 @@ from __future__ import annotations
 import random
 import time
 
-from core.bank import GrpcBank, LocalBank
-from core.config import Config
-from core.events import event
-from core.llm import LLMClient
-from core.params import resolve
-from core.ratelimit import RateLimiter
+from omnitask_sdk.bank import GrpcBank, LocalBank
+from omnitask_sdk.config import Config
+from omnitask_sdk.events import event
+from omnitask_sdk.llm import LLMClient
+from omnitask_sdk.params import resolve
+from omnitask_sdk.ratelimit import RateLimiter
 
 from . import answer as answer_mod
 from .client import CidarenClient, CidarenError, SecurityVerifyError

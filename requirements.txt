@@ -1,4 +1,1 @@
-requests
-brotli
-grpcio
-protobuf
+omnitask-sdk @ git+https://github.com/CometNetworkStudio/OmniTask.git#subdirectory=sdk/python

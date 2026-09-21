@@ -22,7 +22,7 @@
 ### 方式一：独立 CLI
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt   # 从主仓库子目录安装 OmniTask SDK
 python main.py --cli \
   --action study \
   --credential token=<你的词达人 Token> \
@@ -62,10 +62,9 @@ OmniTask 的 Go Host 会以子进程启动 `main.py`，通过 stdin 下发一条
 ```
 .
 ├── cidaren/        # 协议实现（sign/jv/client/answer/runner）
-├── core/           # 内置 OmniTask Script SDK（http/ratelimit/bank/llm）
-├── gen/            # gRPC 生成物（题库客户端）
 ├── main.py         # 入口（Host 模式 / CLI）
 ├── cli.py          # 本地命令行
+├── requirements.txt# 依赖（安装 omnitask-sdk）
 └── script.json     # manifest
 ```
 

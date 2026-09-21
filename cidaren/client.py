@@ -11,7 +11,7 @@ import time
 
 import requests
 
-from core import http
+from omnitask_sdk import http
 from . import jv as jvmod
 from .sign import build_sign, md5_hex
 

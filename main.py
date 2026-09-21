@@ -3,7 +3,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from runtime import serve
+from omnitask_sdk.runtime import serve
 
 from cidaren.runner import run
 
