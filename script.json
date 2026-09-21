@@ -109,6 +109,9 @@
     "actions": [
       "study",
       "class"
-    ]
+    ],
+    "param_map": {
+      "task_name": "task_name"
+    }
   }
 }
